@@ -1,5 +1,10 @@
 import React from 'react'
 
+
+
+
+
+
 type AffairPropsType = {
     // key не нужно типизировать
     affair: any // need to fix any
@@ -7,12 +12,14 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {}// need to fix
+    const deleteCallback = () => {
+
+        props.deleteAffairCallback(props.affair._id)
+    }// need to fix
 
     return (
         <div>
             // show some text
-
             <button onClick={deleteCallback}>X</button>
         </div>
     )
