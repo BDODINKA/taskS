@@ -1,7 +1,3 @@
-.blue {
-    border-bottom: 5px solid blue;
-}
-
 .column {
     display: flex;
     flex-direction: column;
@@ -10,4 +6,7 @@
 
 .testSpanError {
     color: blue;
+}
+.blue{
+    border-bottom: 5px solid blue;
 }
